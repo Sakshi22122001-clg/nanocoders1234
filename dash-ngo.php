@@ -1,3 +1,8 @@
+<?php session_start();
+    if(isset($_SESSION["activeuser"])==false)
+    {
+        header("location:index.php");
+    }?>
 <!DOCTYPE html>
 <html lang="en">
 
