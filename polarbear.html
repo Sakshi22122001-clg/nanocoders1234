@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parallax1 {
+            background-image: url(picc/polarbear1.jpg);
+        }
+        
+        #parallax2 {
+            background-image: url(picc/polarbear3.jpg);
+        }
+        
+        #parallax3 {
+            background-image: url(picc/polarbear2.jpg);
+        }
+        
+        .chart {
+            height: 300px;
+            width: 400px;
+            position: relative;
+            left: 300px;
+        }
+        
+        .vertical {
+            margin-left: 50px;
+            background-color: black;
+            height: 250px;
+            width: 1px;
+            margin-top: 0px;
+        }
+        
+        .horizontal {
+            background-color: black;
+            margin-top: -13px;
+            width: 350px;
+            height: 1px;
+            margin-left: 50px;
+        }
+        
+        .bars {
+            height: 250px;
+            width: 350px;
+            position: absolute;
+            left: 50px;
+            display: flex;
+        }
+        
+        .bars>div {
+            height: 250px;
+            width: 60px;
+            background-color: skyblue;
+            opacity: 0.8;
+            margin-left: 10px;
+        }
+        
+        .population {
+            height: 250px;
+            width: 50px;
+            position: absolute;
+            top: 0px;
+            left: -15px;
+        }
+        
+        .years {
+            height: 50px;
+            width: 350px;
+            position: absolute;
+            top: 260px;
+            left: 50px;
+        }
+        
+        label {
+            font-size: 20px;
+        }
+        
+        #yearspan {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="navigation">
+        <a href="polarbear.html">Wildlife</a>
+        <a onclick="markinfo()">Info</a>
+        <a onclick="markwhereabouts()">Whereabouts</a>
+        <a onclick="markdistribution()">Distribution</a>
+        <a onclick="markconservation()">Conservation</a>
+        <a onclick="markpopulation()">Population</a>
+    </div>
+
+    <div id="parallax1"></div>
+    <div id="mainbody1">
+
+        <h1>POLAR BEAR</h1>
+        <hr>
+        <div>
+            <span id="info">LITTLE INFO :- </span>It is difficult to estimate a global population of polar bears as much of the range has been poorly studied; however, biologists use a working estimate of about 20–25,000 or 22–31,000 polar bears worldwide. Because of expected habitat loss caused by climate change, the polar bear is classified as a vulnerable species.
+            <br>
+            <br>
+
+
+            <span id="whereabouts">WHERE ARE THEY FOUND :-</span>The range includes the territory of five nations: Denmark (Greenland), Norway (Svalbard), Russia, the United States (Alaska) and Canada. These five nations are the signatories of the International Agreement on the Conservation of Polar Bears. 60-80% of polar bears are in Canada .Due to the absence of human development in its remote habitat, it retains more of its original range than any other extant carnivore.Polar bears are thought to exist only in low densities in the area of the Arctic Basin. The 13 North American subpopulations range from the Beaufort Sea south to Hudson Bay and east to Baffin Bay in western Greenland and account for about 54% of the global population.
+
+
+        </div>
+    </div>
+
+    <div id="parallax2"></div>
+
+    <div id="mainbody2">
+        <div>
+            <span id="distribution">WHY WE HAVE CHOOSEN POLAR BEARS :-</span> The giant panda is a vulnerable species, threatened by continued habitat loss and habitat fragmentation,and by a very low birthrate, both in the wild and in captivity.
+            <br> n 2006, scientists reported that the number of pandas living in the wild may have been underestimated at about 1,000..
+            <br>
+            <br>
+
+            <span id="conservation">WHAT HAS BEEN DONE TO SAVE THEM :-</span> For decades, large-scale hunting raised international concern for the future of the species, but populations rebounded after controls and quotas began to take effect. For thousands of years, the polar bear has been a key figure in the material, spiritual, and cultural life of circumpolar peoples, and polar bears remain important in their cultures. Historically, the polar bear has also been known as the "white bear". WHAT WWF(World Wildlife Fund) IS DOING FOR POLAR BEARS :: WWF is working around the Arctic to secure a future for polar bears. They has a dedicated worldwide team working on issues of climate and energy, working regionally, nationally, and internationally. They advocate for governments to recognize and mitigate the effects of climate change on polar bears.They has successfully pushed for a statement by countries with polar bear populations, formally recognizing the urgent need for an effective global response to address the challenges of climate change.
+        </div>
+
+        <br>
+        <br>
+
+        <span id="population">Population Figures:</span>
+
+
+        <div class="chart">
+
+            <div class="population">
+                <label>30000</label>
+                <label>25000</label>
+                <label>20000</label>
+                <label>15000</label>
+                <label>10000</label>
+                <label>5000</label>
+
+            </div>
+
+
+
+
+            <div class="bars">
+                <div title="5000" style="height: 55px; margin-top: 195px;"></div>
+                <div title="15000" style="height: 125px; margin-top: 125px;"></div>
+                <div title="20000" style="height: 163px; margin-top: 87px;"></div>
+                <div title="22500" style="height: 177px; margin-top: 73px;"></div>
+                <div title="26500" style="height: 207px; margin-top: 43px;"></div>
+
+            </div>
+
+            <hr class="vertical">
+            <hr class="horizontal">
+
+
+            <div class="years">
+                <span id="yearspan">1970</span>
+                <span id="yearspan">1980</span>
+                <span id="yearspan">1990</span>
+                <span id="yearspan">2005</span>
+                <span id="yearspan">2015</span>
+            </div>
+
+        </div>
+    </div>
+    <div id="parallax3"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>

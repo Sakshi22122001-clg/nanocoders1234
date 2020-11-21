@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parallax1 {
+            background-image: url(picc/tiger3.jpg);
+        }
+        
+        #parallax2 {
+            background-image: url(picc/tiger2.jpg);
+        }
+        
+        #parallax3 {
+            background-image: url(picc/tiger1.jpg);
+        }
+        
+        .vertical {
+            margin-left: 50px;
+            background-color: black;
+            height: 250px;
+            width: 1px;
+            margin-top: 0px;
+        }
+        
+        .horizontal {
+            background-color: black;
+            margin-top: -13px;
+            width: 350px;
+            height: 1px;
+            margin-left: 50px;
+        }
+        
+        .bars {
+            height: 250px;
+            width: 350px;
+            position: absolute;
+            left: 50px;
+            display: flex;
+        }
+        
+        .bars>div {
+            height: 250px;
+            width: 60px;
+            background-color: skyblue;
+            opacity: 0.8;
+            margin-left: 10px;
+        }
+        
+        .population {
+            height: 250px;
+            width: 50px;
+            position: absolute;
+            top: 0px;
+            left: -10px;
+        }
+        
+        .years {
+            height: 50px;
+            width: 350px;
+            position: absolute;
+            top: 260px;
+            left: 50px;
+        }
+        
+        label {
+            font-size: 20px;
+        }
+        
+        #yearspan {
+            font-size: 20px;
+            margin-left: 7px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="navigation">
+        <a href="tiger.html">Wildlife</a>
+        <a onclick="markinfo()">Info</a>
+        <a onclick="markwhereabouts()">Whereabouts</a>
+        <a onclick="markdistribution()">Distribution</a>
+        <a onclick="markconservation()">Conservation</a>
+        <a onclick="markpopulation()">Population</a>
+    </div>
+
+    <div id="parallax1"></div>
+    <div id="mainbody1">
+
+        <h1>TIGER</h1>
+        <hr>
+        <div>
+            <span id="info">LITTLE INFO :- </span>The tiger is the largest extant cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange-brown fur with a lighter underside . The tiger is among the most recognisable and popular of the world's charismatic megafauna. Major reasons for population decline are habitat destruction, habitat fragmentation and poaching. Tigers are also victims of human–wildlife conflict in particular in range countries with a high human population density.
+            <br>
+            <br>
+
+
+            <span id="whereabouts">WHERE ARE THEY FOUND :-</span>India currently hosts the largest tiger population.The tiger is the national animal of India, Bangladesh, Malaysia and South Korea. The tiger historically ranged from eastern Turkey To the coast of the Sea of Japan. South asia to witness population of tigers . Some Indonesian islands of Sumatra, Java and Bali witness rare Subspecies. Wild tigers live in Asia. Larger subspecies, such as the Siberian tiger, tend to live in northern, colder areas, such as eastern Russia and northeastern China. Smaller subspecies live in southern, warmer countries, such as India, Bangladesh, Nepal, Bhutan, Myanmar .
+        </div>
+    </div>
+
+    <div id="parallax2"></div>
+
+    <div id="mainbody2">
+        <div>
+            <span id="distribution">WHY WE HAVE CHOOSEN PANDAS :-</span> Since the early 20th century, tiger populations have lost at least 93% of their historic range . The tiger is listed as endangered on the IUCN Red List. As of 2015, the global wild tiger population was estimated to number between 3,062 and 3,948 mature individuals, with most of the populations living in small pockets isolated from each other..
+            <br>
+            <br>
+
+            <span id="conservation">WHAT HAS BEEN DONE TO SAVE THEM :-</span> In the 1990s, a new approach to tiger conservation was developed: Tiger Conservation Units (TCUs) . In 1973, India's Project Tiger, started by Indira Gandhi, established numerous tiger reserves.The WWF subsequently declared that the world's count of wild tigers had risen for the first time in a century.On International Tiger Day 2019, the 'Tiger Estimation Report 2018’ was released by Prime Minister Narendra Modi , which witness 25% increase in population of tigers in INDIA .
+        </div>
+
+        <br>
+        <br>
+
+        <span id="population">Population Figures:</span>
+
+
+        <div class="chart">
+
+            <div class="population">
+                <label>10000</label>
+                <label>4000</label>
+                <label>3800</label>
+                <label>3600</label>
+                <label>3400</label>
+                <label>3200</label>
+                <label>3000</label>
+
+            </div>
+
+
+
+
+            <div class="bars">
+                <div title="10000" style="height: 230px; margin-top: 20px;"></div>
+                <div title="4000" style="height: 200px; margin-top: 50px;"></div>
+                <div title="3200" style="height: 60px; margin-top: 190px;"></div>
+                <div title="3890" style="height: 185px; margin-top: 65px;"></div>
+                <div title="3900" style="height: 187px; margin-top: 63px;"></div>
+                <div title="4593–5515" style="height: 210px; margin-top: 40px;"></div>
+
+            </div>
+
+            <hr class="vertical">
+            <hr class="horizontal">
+
+
+            <div class="years">
+                <span id="yearspan">1900's</span>
+                <span id="yearspan">1970</span>
+                <span id="yearspan">1990</span>
+                <span id="yearspan">2000</span>
+                <span id="yearspan">2010</span>
+                <span id="yearspan">2019</span>
+            </div>
+
+        </div>
+    </div>
+    <div id="parallax3"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>

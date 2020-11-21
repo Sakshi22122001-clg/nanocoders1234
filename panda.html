@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parallax1 {
+            background-image: url(picc/panda2.jpg);
+        }
+        
+        #parallax2 {
+            background-image: url(picc/panda1.jpg);
+        }
+        
+        #parallax3 {
+            background-image: url(picc/panda3.jpg);
+        }
+        
+        .vertical {
+            margin-left: 50px;
+            background-color: black;
+            height: 250px;
+            width: 1px;
+            margin-top: 0px;
+        }
+        
+        .horizontal {
+            background-color: black;
+            margin-top: -13px;
+            width: 350px;
+            height: 1px;
+            margin-left: 50px;
+        }
+        
+        .bars {
+            height: 250px;
+            width: 350px;
+            position: absolute;
+            left: 50px;
+            display: flex;
+        }
+        
+        .bars>div {
+            height: 250px;
+            width: 60px;
+            background-color: skyblue;
+            opacity: 0.8;
+            margin-left: 10px;
+        }
+        
+        .population {
+            height: 250px;
+            width: 50px;
+            position: absolute;
+            top: 0px;
+            left: -10px;
+        }
+        
+        .years {
+            height: 50px;
+            width: 350px;
+            position: absolute;
+            top: 260px;
+            left: 50px;
+        }
+        
+        label {
+            font-size: 20px;
+        }
+        
+        #yearspan {
+            font-size: 20px;
+            margin-left: 19px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="navigation">
+        <a href="mainpage.html">Wildlife</a>
+        <a onclick="markinfo()">Info</a>
+        <a onclick="markwhereabouts()">Whereabouts</a>
+        <a onclick="markdistribution()">Distribution</a>
+        <a onclick="markconservation()">Conservation</a>
+        <a onclick="markpopulation()">Population</a>
+    </div>
+
+    <div id="parallax1"></div>
+    <div id="mainbody1">
+
+        <h1>PANDA</h1>
+        <hr>
+        <div>
+            <span id="info">LITTLE INFO :- </span>The giant panda, also known as the panda bear or simply the panda, is a bear native to south central China. It is characterised by large, black patches around its eyes, over the ears, and across its round body.
+            <br> For many decades, the precise taxonomic classification of the giant panda was under debate because it shares characteristics with both bears and raccoons. However, molecular studies indicate the giant panda is a true bear.
+            <br>
+            <br>
+
+
+            <span id="whereabouts">WHERE ARE THEY FOUND :-</span>The giant panda small portion on the western edge of its historical range, which stretched through southern and eastern China, northern Myanmar, and northern Vietnam. The giant panda has been a target of poaching by locals since ancient times and by foreigners since it was introduced to the West. Starting in the 1930s, foreigners were unable to poach giant pandas in China because of the Second Sino-Japanese War and the Chinese Civil War, but pandas remained a source of soft furs for the locals.
+        </div>
+    </div>
+
+    <div id="parallax2"></div>
+
+    <div id="mainbody2">
+        <div>
+            <span id="distribution">WHY WE HAVE CHOOSEN PANDAS :-</span> The giant panda is a vulnerable species, threatened by continued habitat loss and habitat fragmentation,and by a very low birthrate, both in the wild and in captivity.
+            <br> n 2006, scientists reported that the number of pandas living in the wild may have been underestimated at about 1,000..
+            <br>
+            <br>
+
+            <span id="conservation">WHAT HAS BEEN DONE TO SAVE THEM :-</span> The most important work to save the giant panda is to protect their habitat. Without this, pandas could only survive in captivity.
+            <br> To protect giant panda's habitat, China government has set 13 panda nature reserve areas. In the areas, farming fields have been left to grow back as forest. Trees and bamboo have grown well, and habitat are recovering. Also farming practices around the forests have been reduced or separated from the reserve areas. According to government research in 2015, habitat for giant pandas has grown by about 2,720 km^2, (almost the area of Yosemite National Park), compared to in 2003. At 25,770 km2, panda habitat is now almost twice the size of Serengeti National Park.
+        </div>
+
+        <br>
+        <br>
+
+        <span id="population">Population Figures:</span>
+
+
+        <div class="chart">
+
+            <div class="population">
+                <label>2000</label>
+                <label>1800</label>
+                <label>1600</label>
+                <label>1400</label>
+                <label>1200</label>
+                <label>1000</label>
+                <label>800</label>
+
+            </div>
+
+
+
+
+            <div class="bars">
+                <div title="1000" style="height: 60px; margin-top: 190px;"></div>
+                <div title="900" style="height: 30px; margin-top: 220px;"></div>
+                <div title="1200" style="height: 90px; margin-top: 160px;"></div>
+                <div title="1596" style="height: 158px; margin-top: 92px;"></div>
+                <div title="1864" style="height: 203px; margin-top: 47px;"></div>
+
+            </div>
+
+            <hr class="vertical">
+            <hr class="horizontal">
+
+
+            <div class="years">
+                <span id="yearspan">1975</span>
+                <span id="yearspan">1985</span>
+                <span id="yearspan">1995</span>
+                <span id="yearspan">2005</span>
+                <span id="yearspan">2013</span>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="parallax3"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>

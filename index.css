@@ -1,0 +1,130 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+}
+#navigation{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: #24252a;
+    box-sizing: border-box;
+    padding: 20px;
+    position: fixed;
+    z-index: 10;
+}
+
+
+#navigation>a{
+    height: 30px;
+    width: 19%;
+    
+margin-left: 10px;
+
+text-align: center;
+line-height: 30px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1em;
+border-radius: 15px;
+color: white;
+cursor: pointer;
+text-decoration: none;
+}
+
+#navigation>a:hover{
+background-color: #0288a1;
+}
+
+
+#parallax1{
+   
+    height: 565px;
+    width: 100%;
+background-position: left;
+background-size: cover;
+background-attachment: fixed;
+}
+
+#mainbody1{
+    height: 600px;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1.5em;
+background-color: white;
+box-sizing: border-box;
+padding: 50px;
+line-height: 33px;
+
+}
+#mainbody1>h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 2.5em;
+    
+    margin-top: 0px;
+}
+
+#parallax2{
+  
+     height:465px;
+     width: 100%;
+ background-position: left;
+ background-size: cover;
+ background-attachment: fixed;
+
+
+}
+#mainbody2{
+    height: 950px;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1.5em;
+background-color: white;
+box-sizing: border-box;
+padding: 50px;
+line-height: 33px;
+
+}
+
+.chart {
+    height: 300px;
+    width: 400px;
+
+    position: relative;
+    left: 300px;
+
+
+}
+
+
+#parallax3{
+  
+     height: 465px;
+     width: 100%;
+ background-position: left;
+ background-size: cover;
+ background-attachment: fixed;
+}
+
+#mainbody3{
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 23px;
+    box-sizing: border-box;
+    padding-left: 50px;
+}
+
+#mainbody3>a>button {
+    background-color: #0288a1;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+border-radius: 4px;
+}
