@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>NOC.com</title>
  <meta charset="UTF-8">
     <title>Document</title>
     <!--font awesome-->
@@ -155,22 +155,6 @@
                     } else {
                         $("#loginRes").html(response);
                     }
-                });
-            });
-            /////////////==AJAX-FORGOT-PASSWORD==///////////
-            $("#btnpwd").click(function() {
-                var forgotpwduid = $("#forgotpwduid").val();
-                var url = "forgot-pwd-ajax.php?forgotpwduid=" + forgotpwduid;
-                var actionurlmsg = "msg-forgot-pwd.php?forgotpwduid=" + forgotpwduid;
-                $.get(url, function(msglogin) {
-                    if (msglogin == "") {
-                        $("#spnforgotpwd").html("ID is not registered...kindly Signin first").css("color", "red");
-                    } else
-                        $("#spnforgotpwd").html(msglogin);
-                });
-                /////////////////==MESSAGING==/////////////
-                $.get(actionurlmsg, function(msg) {
-                    alert(msg);
                 });
             });
         });
@@ -470,10 +454,10 @@
     <body>
        
         <nav class="navbar navbar-expand-lg navbar-light" id="dashboard"><b>
-            <h1>
-               <img src="pics/collage1-removebg-preview.png" class="img-fluid" alt="Responsive image">
-                <font face="Algerian" color="black">NGO's </font><font face="Algerian" color="#ce0058">Open to </font><font face="Algerian" color="black">CITIZEN</font>
-            </h1>
+            <h2>
+               <img src="pics/collage1-removebg-preview.png" class="img-fluid" alt="Responsive image"><b>
+                <font face="Algerian" color="black">NGO's </font><font face="Algerian" color="#ce0058">Open to </font><font face="Algerian" color="black">CITIZEN</font></b>
+            </h2>
         </b>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -512,7 +496,10 @@
        
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
+      <div class="carousel-item active">
+      <img src="pics/ccc.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
       <img src="pics/cropped-forest.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
@@ -552,50 +539,17 @@
 
     </div>
     <div class="media" style="background-color:#ce0058" id="bgabtsite">
-        <i class='fab fa-slack ml-3 mt-3' id="rot" style='font-size:800%; color:white'></i>
+     
         <div class="media-body">
             <font color="white">
                 <h1 class="mt-0 ml-3 mt-3"><b>
-                        <font face="Matura MT Script Capitals"> &nbsp;&nbsp;About Site</font>
+                        <font face="Berlin Sans FB"> &nbsp;&nbsp;About Site</font>
                     </b></h1>
                 <h2>
                     <p class="ml-3" id="overview">The site is basically for the connection between NGOs and the CITIZENS for finding eachother and contribute towards the betterment of the enviornment.</p>
                 </h2>
             </font>
         </div>
-    </div>
-    <div class="media-body" style="background-color:rgb(232,232,232)">
-
-       <center>
-            <font color="#41273B">
-                <h3>
-                    <div class="row mt-1 ml-5 md-1"><center>&nbsp;
-                        &nbsp;&nbsp;&nbsp;
-                        &nbsp;|| SEARCH NGOs ||
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        || SEARCH PARTICIPANTS ||
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        || DONATE ||
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        || CONNECT ||
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;
-                        || HELP ||
-                        &nbsp;
-                        &nbsp;
-                        &nbsp;</center>
-                       </div>
-                </h3>
-            </font>
-        </center>
-
     </div>
 
     <div class="container mt-4" style="background-color:rgba(230, 221, 208, 0.5);">
@@ -1103,9 +1057,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="ml-4" data-toggle="modal"><span class="badge-warning ml-5" id="clickpwd"><a data-dismiss="modal" data-toggle="modal" href="#forgotpwd" style="text-decoration-color:red;">
-                                <h5 id="frgtpwd">Forgot Password?</h5>
-                            </a></span></div>
+                   
                     <div style="margin-left:30px"><span id="loginRes"></span></div>
 
                     <div class="modal-footer">
@@ -1117,34 +1069,5 @@
             </div>
         </div>
     </form>
-    <form id="formforgotpwd">
-        <div class="modal fade" tabindex="-1" role="dialog" id="forgotpwd">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header" id="header">
-                        <h5 class="modal-title">Forgot Password</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form id="form">
-                            <div class="form-group">
-                                <label for="forgotpwduid">
-                                    <h5>User ID</h5>
-                                </label>
-                                <input type="text" class="form-control" id="forgotpwduid" name="forgotpwduid" placeholder="Enter your User ID plz...">
-                            </div>
-                        </form>
-                    </div>
-                    <div style="margin-left:30px"><span id="spnforgotpwd">&nbsp;</span></div>
-                    <div class="modal-footer">
-                        <i class='fas fa-key fa-2x' style="color:#ce0058"></i>&nbsp;
-                        <input type="button" class="btn btn-primary" id="btnpwd" value="Forgot Password">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
+    
     </body>
